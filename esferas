@@ -1,0 +1,55 @@
+
+package poo_esferas_ejercicio_resuelto15;
+
+import java.util.Scanner;
+
+public class POO_Esferas_Ejercicio_Resuelto15 {
+
+   
+    public static void main(String[] args) {
+        Scanner esferas = new Scanner(System.in);
+        
+        int pesoA, pesoB, pesoC, pesoD;
+        
+        System.out.println("Ingrese el peso de la esfera A: ");
+        pesoA = esferas.nextInt();
+        System.out.println("Ingrese el peso de la esfera B: ");
+        pesoB = esferas.nextInt();
+        System.out.println("Ingrese el peso de la esfera C: ");
+        pesoC = esferas.nextInt();
+        System.out.println("Ingrese el peso de la esfera D: ");
+        pesoD = esferas.nextInt();
+        
+        if (pesoA == pesoB && pesoA == pesoC){
+            if (pesoD > pesoA){
+                System.out.println("La esfera D es la diferente y es mas pesada que las otras 3 esferas");
+            }
+            else{
+                System.out.println("La esfera D es la diferente y es menos pesada que las otras 3 esferas");
+            }
+        }
+        else if (pesoA == pesoB && pesoA == pesoD){
+            if (pesoC > pesoA){
+                System.out.println("La esfera C es la diferente y es mas pesada que las otras 3 esferas");
+            }
+            else{
+                System.out.println("La esfera C es la diferente y es menos pesada que las otras 3 esferas");
+            }
+        }
+        else if (pesoA == pesoC && pesoA == pesoD){
+            if (pesoB > pesoA){
+                System.out.println("La esfera B es la diferente y es mas pesada que las otras 3 esferas");
+            }
+            else{
+                System.out.println("La esfera B es la diferente y es menos pesada que las otras 3 esferas");
+            }
+        }
+        else if (pesoA > pesoB){
+            System.out.println("La esfera A es la diferente y es mas pesada que las otras 3 esferas");
+        }
+        else{
+            System.out.println("La esfera A es la diferente y es menos pesada que las otras 3 esferas");
+        }
+    }
+    
+}
